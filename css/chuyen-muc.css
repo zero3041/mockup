@@ -510,7 +510,7 @@ html,body {
 }
 
 .product-item-card-img a img{
-
+    width: 200px;
 }
 
 .product-item-card-img a {

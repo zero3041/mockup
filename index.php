@@ -380,6 +380,324 @@
                       </div>
                   </div>
                 </div>
+                <!--  -->
+                <div class="collection">
+                    <div class="collection-header">
+                      <h3 class="collection-header-title">Bộ sưu tập</h3>
+                      <a href="#" class="collection-header-link">
+                        <span>Xem thêm</span> <i class="fas fa-angle-right fa-1x" ></i>
+                      </a>
+                    </div>
+                    <div class="collection-list">
+                      <div class="collection-items">
+                        <a href="#" class="collection-items-list-link">
+                          <div class="collection-items-title">Phụ Kiện 5 Sao ></div>
+                          <div class="collection-items-subtitle">10,123 Sản phẩm</div>
+                          <div class="collection-items-img-list">
+                            <div class="collection-items-img-item">
+                              <img src="images/sac-cl.jpg" alt="" class="collection-items-img">
+                            </div>
+                            <div class="collection-items-img-item">
+                              <img src="images/pk-1.webp" alt="" class="collection-items-img">
+                            </div>
+                            <div class="collection-items-img-item">
+                              <img src="images/pk2.webp" alt="" class="collection-items-img">
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="collection-items">
+                        <a href="#" class="collection-items-list-link">
+                          <div class="collection-items-title">Phụ Kiện 5 Sao ></div>
+                          <div class="collection-items-subtitle">10,123 Sản phẩm</div>
+                          <div class="collection-items-img-list">
+                            <div class="collection-items-img-item">
+                              <img src="images/sac-cl.jpg" alt="" class="collection-items-img">
+                            </div>
+                            <div class="collection-items-img-item">
+                              <img src="images/pk-1.webp" alt="" class="collection-items-img">
+                            </div>
+                            <div class="collection-items-img-item">
+                              <img src="images/pk2.webp" alt="" class="collection-items-img">
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="collection-items">
+                        <a href="#" class="collection-items-list-link">
+                          <div class="collection-items-title">Phụ Kiện 5 Sao ></div>
+                          <div class="collection-items-subtitle">10,123 Sản phẩm</div>
+                          <div class="collection-items-img-list">
+                            <div class="collection-items-img-item">
+                              <img src="images/sac-cl.jpg" alt="" class="collection-items-img">
+                            </div>
+                            <div class="collection-items-img-item">
+                              <img src="images/pk-1.webp" alt="" class="collection-items-img">
+                            </div>
+                            <div class="collection-items-img-item">
+                              <img src="images/pk2.webp" alt="" class="collection-items-img">
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="collection-items">
+                        <a href="#" class="collection-items-list-link">
+                          <div class="collection-items-title">Phụ Kiện 5 Sao ></div>
+                          <div class="collection-items-subtitle">10,123 Sản phẩm</div>
+                          <div class="collection-items-img-list">
+                            <div class="collection-items-img-item">
+                              <img src="images/sac-cl.jpg" alt="" class="collection-items-img">
+                            </div>
+                            <div class="collection-items-img-item">
+                              <img src="images/pk-1.webp" alt="" class="collection-items-img">
+                            </div>
+                            <div class="collection-items-img-item">
+                              <img src="images/pk2.webp" alt="" class="collection-items-img">
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="collection-items">
+                        <a href="#" class="collection-items-list-link">
+                          <div class="collection-items-title">Phụ Kiện 5 Sao ></div>
+                          <div class="collection-items-subtitle">10,123 Sản phẩm</div>
+                          <div class="collection-items-img-list">
+                            <div class="collection-items-img-item">
+                              <img src="images/sac-cl.jpg" alt="" class="collection-items-img">
+                            </div>
+                            <div class="collection-items-img-item">
+                              <img src="images/pk-1.webp" alt="" class="collection-items-img">
+                            </div>
+                            <div class="collection-items-img-item">
+                              <img src="images/pk2.webp" alt="" class="collection-items-img">
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="collection-items">
+                        <a href="#" class="collection-items-list-link">
+                          <div class="collection-items-title">Phụ Kiện 5 Sao ></div>
+                          <div class="collection-items-subtitle">10,123 Sản phẩm</div>
+                          <div class="collection-items-img-list">
+                            <div class="collection-items-img-item">
+                              <img src="images/sac-cl.jpg" alt="" class="collection-items-img">
+                            </div>
+                            <div class="collection-items-img-item">
+                              <img src="images/pk-1.webp" alt="" class="collection-items-img">
+                            </div>
+                            <div class="collection-items-img-item">
+                              <img src="images/pk2.webp" alt="" class="collection-items-img">
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="collection-items">
+                        <a href="#" class="collection-items-list-link">
+                          <div class="collection-items-title">Phụ Kiện 5 Sao ></div>
+                          <div class="collection-items-subtitle">10,123 Sản phẩm</div>
+                          <div class="collection-items-img-list">
+                            <div class="collection-items-img-item">
+                              <img src="images/sac-cl.jpg" alt="" class="collection-items-img">
+                            </div>
+                            <div class="collection-items-img-item">
+                              <img src="images/pk-1.webp" alt="" class="collection-items-img">
+                            </div>
+                            <div class="collection-items-img-item">
+                              <img src="images/pk2.webp" alt="" class="collection-items-img">
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="collection-items">
+                        <a href="#" class="collection-items-list-link">
+                          <div class="collection-items-title">Phụ Kiện 5 Sao ></div>
+                          <div class="collection-items-subtitle">10,123 Sản phẩm</div>
+                          <div class="collection-items-img-list">
+                            <div class="collection-items-img-item">
+                              <img src="images/sac-cl.jpg" alt="" class="collection-items-img">
+                            </div>
+                            <div class="collection-items-img-item">
+                              <img src="images/pk-1.webp" alt="" class="collection-items-img">
+                            </div>
+                            <div class="collection-items-img-item">
+                              <img src="images/pk2.webp" alt="" class="collection-items-img">
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- danh muc  -->
+                  <div class="categories">
+                    <div class="categories-header">
+                      <h3 class="categories-header-title">Danh mục ngành hàng</h3>
+                    </div>
+                    <div class="categories-content">
+                      <div class="categories-detail-list">
+                        <div class="categories-detail-item">
+                          <a href="#" class="categories-detail-item-content">
+                            <div class="categories-detail-item-img">
+                              <img src="images/dock.webp" alt="">
+                            </div>
+                            <div class="categories-detail-item-name">
+                              <span class="item-name-text">Cáp & Dock sạc</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="categories-detail-item">
+                          <a href="#" class="categories-detail-item-content">
+                            <div class="categories-detail-item-img">
+                              <img src="images/dock.webp" alt="">
+                            </div>
+                            <div class="categories-detail-item-name">
+                              <span class="item-name-text">Cáp & Dock sạc</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="categories-detail-item">
+                          <a href="#" class="categories-detail-item-content">
+                            <div class="categories-detail-item-img">
+                              <img src="images/dock.webp" alt="">
+                            </div>
+                            <div class="categories-detail-item-name">
+                              <span class="item-name-text">Cáp & Dock sạc</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="categories-detail-item">
+                          <a href="#" class="categories-detail-item-content">
+                            <div class="categories-detail-item-img">
+                              <img src="images/dock.webp" alt="">
+                            </div>
+                            <div class="categories-detail-item-name">
+                              <span class="item-name-text">Cáp & Dock sạc</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="categories-detail-item">
+                          <a href="#" class="categories-detail-item-content">
+                            <div class="categories-detail-item-img">
+                              <img src="images/dock.webp" alt="">
+                            </div>
+                            <div class="categories-detail-item-name">
+                              <span class="item-name-text">Cáp & Dock sạc</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="categories-detail-item">
+                          <a href="#" class="categories-detail-item-content">
+                            <div class="categories-detail-item-img">
+                              <img src="images/dock.webp" alt="">
+                            </div>
+                            <div class="categories-detail-item-name">
+                              <span class="item-name-text">Cáp & Dock sạc</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="categories-detail-item">
+                          <a href="#" class="categories-detail-item-content">
+                            <div class="categories-detail-item-img">
+                              <img src="images/dock.webp" alt="">
+                            </div>
+                            <div class="categories-detail-item-name">
+                              <span class="item-name-text">Cáp & Dock sạc</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="categories-detail-item edit-items">
+                          <a href="#" class="categories-detail-item-content">
+                            <div class="categories-detail-item-img">
+                              <img src="images/dock.webp" alt="">
+                            </div>
+                            <div class="categories-detail-item-name">
+                              <span class="item-name-text">Cáp & Dock sạc</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="categories-detail-item">
+                          <a href="#" class="categories-detail-item-content">
+                            <div class="categories-detail-item-img">
+                              <img src="images/dock.webp" alt="">
+                            </div>
+                            <div class="categories-detail-item-name">
+                              <span class="item-name-text">Cáp & Dock sạc</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="categories-detail-item">
+                          <a href="#" class="categories-detail-item-content">
+                            <div class="categories-detail-item-img">
+                              <img src="images/dock.webp" alt="">
+                            </div>
+                            <div class="categories-detail-item-name">
+                              <span class="item-name-text">Cáp & Dock sạc</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="categories-detail-item">
+                          <a href="#" class="categories-detail-item-content">
+                            <div class="categories-detail-item-img">
+                              <img src="images/dock.webp" alt="">
+                            </div>
+                            <div class="categories-detail-item-name">
+                              <span class="item-name-text">Cáp & Dock sạc</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="categories-detail-item">
+                          <a href="#" class="categories-detail-item-content">
+                            <div class="categories-detail-item-img">
+                              <img src="images/dock.webp" alt="">
+                            </div>
+                            <div class="categories-detail-item-name">
+                              <span class="item-name-text">Cáp & Dock sạc</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="categories-detail-item">
+                          <a href="#" class="categories-detail-item-content">
+                            <div class="categories-detail-item-img">
+                              <img src="images/dock.webp" alt="">
+                            </div>
+                            <div class="categories-detail-item-name">
+                              <span class="item-name-text">Cáp & Dock sạc</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="categories-detail-item">
+                          <a href="#" class="categories-detail-item-content">
+                            <div class="categories-detail-item-img">
+                              <img src="images/dock.webp" alt="">
+                            </div>
+                            <div class="categories-detail-item-name">
+                              <span class="item-name-text">Cáp & Dock sạc</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="categories-detail-item">
+                          <a href="#" class="categories-detail-item-content">
+                            <div class="categories-detail-item-img">
+                              <img src="images/dock.webp" alt="">
+                            </div>
+                            <div class="categories-detail-item-name">
+                              <span class="item-name-text">Cáp & Dock sạc</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="categories-detail-item edit-items">
+                          <a href="#" class="categories-detail-item-content">
+                            <div class="categories-detail-item-img">
+                              <img src="images/dock.webp" alt="">
+                            </div>
+                            <div class="categories-detail-item-name">
+                              <span class="item-name-text">Cáp & Dock sạc</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
             </div>
         </div>

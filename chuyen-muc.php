@@ -6,6 +6,7 @@
     // print_r($sql).exit();
     $result = select_one($sql);
     // print_r($result).die("ok");
+<<<<<<< HEAD
     $cm = "SELECT * FROM chuyenmuc WHERE id={$result["cid"]}";
     $cmo = select_one($cm);
     // print_r($cm).die("ok");
@@ -14,6 +15,11 @@
     $list = select_list($sql);
 
 
+=======
+    $sql = "SELECT * FROM trangchu where cid={$result['cid']}";
+    // print_r($sql).exit();
+    $list = select_list($sql);
+>>>>>>> 08ecaec3f9b0d2e9a25ecd5d82e1f6232c23ff90
 ?>
 <!DOCTYPE html>
 <html lang="vi">
@@ -185,6 +191,7 @@
         <div class="card">
             <div class="card-main">
                 <a href="#" class="card-detail-first">
+<<<<<<< HEAD
                     <img src="<?php echo $cmo['img'] ?>/cm1.webp" alt="" class="card-main-img">
                 </a>
                 <a href="#" class="card-detail">
@@ -204,6 +211,27 @@
                 </a>
                 <a href="#" class="card-detail">
                     <img src="<?php echo $cmo['img'] ?>/cm7.webp" alt="" class="card-main-img">
+=======
+                    <img src="images/chuyenmuc/cm1.webp" alt="" class="card-main-img">
+                </a>
+                <a href="#" class="card-detail">
+                    <img src="images/chuyenmuc/cm2.webp" alt="" class="card-main-img">
+                </a>
+                <a href="#" class="card-detail">
+                    <img src="images/chuyenmuc/cm3.webp" alt="" class="card-main-img">
+                </a>
+                <a href="#" class="card-detail">
+                    <img src="images/chuyenmuc/cm4.webp" alt="" class="card-main-img">
+                </a>
+                <a href="#" class="card-detail">
+                    <img src="images/chuyenmuc/cm5.webp" alt="" class="card-main-img">
+                </a>
+                <a href="#" class="card-detail">
+                    <img src="images/chuyenmuc/cm6.webp" alt="" class="card-main-img">
+                </a>
+                <a href="#" class="card-detail">
+                    <img src="images/chuyenmuc/cm7.webp" alt="" class="card-main-img">
+>>>>>>> 08ecaec3f9b0d2e9a25ecd5d82e1f6232c23ff90
                 </a>
             </div>
         </div>
@@ -227,8 +255,13 @@
                                     <div class="product-item">
                                         <div class="product-item-card">
                                             <div class="product-item-card-img">
+<<<<<<< HEAD
                                                 <a href="./chi-tiet.php?id=<?php echo $item['id'] ?>">
                                                     <img src="<?php echo($item["img"]) ?>/1.webp" alt="">
+=======
+                                                <a href="#">
+                                                    <img src="<?php echo($item["img"]) ?>" alt="">
+>>>>>>> 08ecaec3f9b0d2e9a25ecd5d82e1f6232c23ff90
                                                 </a>
                                             </div>
                                         </div>

@@ -263,6 +263,7 @@
 30.10.2021 08:31:01 sql=[SELECT * FROM trangchu where cid=1] 
 30.10.2021 08:33:49 sql=[SELECT * FROM trangchu where id=4] 
 30.10.2021 08:33:49 sql=[SELECT * FROM trangchu where cid=1] 
+<<<<<<< HEAD
 30.10.2021 08:38:24 sql=[select * from trangchu limit 6] 
 30.10.2021 08:38:25 sql=[select * from chuyenmuc] 
 30.10.2021 08:38:25 sql=[SELECT * FROM trangchu where cid=1] 
@@ -387,3 +388,5 @@
 30.10.2021 09:27:41 sql=[SELECT * FROM chuyenmuc WHERE id=4] 
 30.10.2021 09:27:42 sql=[SELECT * FROM trangchu where cid=4] 
 30.10.2021 09:27:43 sql=[SELECT * FROM trangchu where id=9] 
+=======
+>>>>>>> 08ecaec3f9b0d2e9a25ecd5d82e1f6232c23ff90

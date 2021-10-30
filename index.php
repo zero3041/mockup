@@ -256,9 +256,15 @@
                         <?php foreach($resultOther as $item) {?>
                           <div class="col-lg-2 col-md-4 col-sm-6">
                           <div href="#" class="deal-content_card col">
+<<<<<<< HEAD
                             <a href="./chi-tiet.php?id=<?php echo($item["id"]) ?>"><img class="imgdeal" src="<?php echo $item["img"] ?>/1.webp" alt=""></a>
                             <div class="card-name">
                               <a href="./chi-tiet.php?id=<?php echo($item["id"]) ?>" class="card-text" ><?php echo $item["cardname"] ?></a>
+=======
+                            <a href="./chuyen-muc.php?id=<?php echo($item["id"]) ?>"><img class="imgdeal" src="<?php echo $item["img"] ?>" alt=""></a>
+                            <div class="card-name">
+                              <a href="./chuyen-muc.php?id=<?php echo($item["id"]) ?>" class="card-text" ><?php echo $item["cardname"] ?></a>
+>>>>>>> 08ecaec3f9b0d2e9a25ecd5d82e1f6232c23ff90
                             </div>
                             <div class="card-price"><?php echo $item["cardprice"] ?></div>
                             <div class="card-price-current">
@@ -561,7 +567,11 @@
                         <div class="categories-detail-item">
                           <a href="./chuyen-muc.php?id=<?php echo $items['id'] ?>" class="categories-detail-item-content">
                             <div class="categories-detail-item-img">
+<<<<<<< HEAD
                               <img src="<?php echo $items["img"] ?>/1.webp" alt="">
+=======
+                              <img src="<?php echo $items["img"] ?>" alt="">
+>>>>>>> 08ecaec3f9b0d2e9a25ecd5d82e1f6232c23ff90
                             </div>
                             <div class="categories-detail-item-name">
                               <span class="item-name-text"><?php echo $mid["name"] ?></span>

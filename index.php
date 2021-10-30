@@ -1,8 +1,21 @@
 <?php
     include("lib_db.php");
-    $sql = "select * from trangchu";
+    $sql = "select * from trangchu limit 6";
     $resultOther = select_list($sql);
-    //print_r($resultOther);exit();
+    //print_r($resultOther);exit(); 
+    $sqll = "select * from chuyenmuc";
+    $list = select_list($sqll);
+    // print_r($list).exit();
+    // foreach($list as $items){
+    //   $danhmuc = "SELECT * FROM trangchu where cid={$item["id"]}";
+    //   $items = select_one($danhmuc);
+    //   // print_r($items).die("ok");
+    // }
+    
+    // print_r($list["id"]).exit();
+    // print_r($danhmuc).exit();
+    
+    // print_r($items).exit();
 ?>
 <!DOCTYPE html>
 <html lang="en" >
@@ -243,9 +256,9 @@
                         <?php foreach($resultOther as $item) {?>
                           <div class="col-lg-2 col-md-4 col-sm-6">
                           <div href="#" class="deal-content_card col">
-                            <a href="#"><img class="imgdeal" src="<?php echo $item["img"] ?>" alt=""></a>
+                            <a href="./chuyen-muc.php?id=<?php echo($item["id"]) ?>"><img class="imgdeal" src="<?php echo $item["img"] ?>" alt=""></a>
                             <div class="card-name">
-                              <a class="card-text" href="#"><?php echo $item["cardname"] ?></a>
+                              <a href="./chuyen-muc.php?id=<?php echo($item["id"]) ?>" class="card-text" ><?php echo $item["cardname"] ?></a>
                             </div>
                             <div class="card-price"><?php echo $item["cardprice"] ?></div>
                             <div class="card-price-current">
@@ -380,7 +393,7 @@
                       </div>
                   </div>
                 </div>
-                <!--  -->
+                <!-- bo suu tap -->
                 <div class="collection">
                     <div class="collection-header">
                       <h3 class="collection-header-title">Bộ sưu tập</h3>
@@ -527,7 +540,7 @@
                       </div>
                     </div>
                   </div>
-
+                </div>
                   <!-- danh muc  -->
                   <div class="categories">
                     <div class="categories-header">
@@ -535,46 +548,28 @@
                     </div>
                     <div class="categories-content">
                       <div class="categories-detail-list">
+                        <?php
+                          foreach($list as $items){
+                            // print_r($list).die("ok");
+                            $mid = $items;
+                            // print_r($items).die("ok");
+                            $danhmuc = "SELECT * FROM trangchu where cid={$items["id"]}";
+                            // print_r($danhmuc);
+                            $items = select_one($danhmuc);
+                            // print_r($items).die("ok");
+                        ?>
                         <div class="categories-detail-item">
-                          <a href="#" class="categories-detail-item-content">
+                          <a href="./chuyen-muc.php?id=<?php echo $items['id'] ?>" class="categories-detail-item-content">
                             <div class="categories-detail-item-img">
-                              <img src="images/dock.webp" alt="">
+                              <img src="<?php echo $items["img"] ?>" alt="">
                             </div>
                             <div class="categories-detail-item-name">
-                              <span class="item-name-text">Cáp & Dock sạc</span>
+                              <span class="item-name-text"><?php echo $mid["name"] ?></span>
                             </div>
                           </a>
                         </div>
-                        <div class="categories-detail-item">
-                          <a href="#" class="categories-detail-item-content">
-                            <div class="categories-detail-item-img">
-                              <img src="images/dock.webp" alt="">
-                            </div>
-                            <div class="categories-detail-item-name">
-                              <span class="item-name-text">Cáp & Dock sạc</span>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="categories-detail-item">
-                          <a href="#" class="categories-detail-item-content">
-                            <div class="categories-detail-item-img">
-                              <img src="images/dock.webp" alt="">
-                            </div>
-                            <div class="categories-detail-item-name">
-                              <span class="item-name-text">Cáp & Dock sạc</span>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="categories-detail-item">
-                          <a href="#" class="categories-detail-item-content">
-                            <div class="categories-detail-item-img">
-                              <img src="images/dock.webp" alt="">
-                            </div>
-                            <div class="categories-detail-item-name">
-                              <span class="item-name-text">Cáp & Dock sạc</span>
-                            </div>
-                          </a>
-                        </div>
+                        <?php } ?>
+                        <!-- ngan cach phan ko dung php -->
                         <div class="categories-detail-item">
                           <a href="#" class="categories-detail-item-content">
                             <div class="categories-detail-item-img">
@@ -699,7 +694,7 @@
                     </div>
                   </div>
 
-            </div>
+                
         </div>
 
         

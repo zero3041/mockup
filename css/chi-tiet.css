@@ -415,17 +415,21 @@ html,body {
     position: relative;
 }
   
-  /* Hide the images by default */
-  .mySlides {
+  
+.mySlides {
     display: none;
 }
+
+.mySlides img{
+    width: 100%;
+}
   
-  /* Add a pointer when hovering over the thumbnail images */
+  
 .cursor {
     cursor: pointer;
 }
   
-  /* Next & previous buttons */
+  
 .prev,
 .next {
     margin-top: 230px !important;
@@ -444,7 +448,7 @@ html,body {
     text-decoration: none;
 }
   
-  /* Position the "next button" to the right */
+  
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
@@ -460,6 +464,10 @@ html,body {
 .pre-edit{
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.pre-edit img{
+    width: 100%;
 }
   
   /* Container for image text */
@@ -1651,8 +1659,16 @@ html,body {
   width: 594px;
 }
 
+.footer-third-title-1 span{
+    display: block;
+}
+
 .footer-third-title-2{
   width: 297px;
+}
+
+.footer-third-title-2 span{
+    display: block;
 }
 
 .c-lazada{

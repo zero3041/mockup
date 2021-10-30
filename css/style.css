@@ -329,6 +329,8 @@ html,body {
     display: flex;
     align-items: center;
 }
+
+
   
 .content_menu-link img {
     width: 32px;
@@ -854,6 +856,14 @@ html,body {
     display: flex;
     flex-direction: column;
   }
+
+  .go-where{
+    color: var(--primary-color);
+  }
+
+  .tai-app-lzd{
+    color: #0e136e;
+  }
   
   .footer-contact_2-info-download {
     margin-right: 12px;
@@ -1051,6 +1061,14 @@ html,body {
 
 .footer-third-title-2{
   width: 297px;
+}
+
+.footer-third-title-1 span{
+  display: block;
+}
+
+.footer-third-title-2 span{
+  display: block;
 }
 
 .c-lazada{

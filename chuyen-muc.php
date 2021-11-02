@@ -191,7 +191,6 @@
         <div class="card">
             <div class="card-main">
                 <a href="#" class="card-detail-first">
-<<<<<<< HEAD
                     <img src="<?php echo $cmo['img'] ?>/cm1.webp" alt="" class="card-main-img">
                 </a>
                 <a href="#" class="card-detail">
@@ -211,27 +210,6 @@
                 </a>
                 <a href="#" class="card-detail">
                     <img src="<?php echo $cmo['img'] ?>/cm7.webp" alt="" class="card-main-img">
-=======
-                    <img src="images/chuyenmuc/cm1.webp" alt="" class="card-main-img">
-                </a>
-                <a href="#" class="card-detail">
-                    <img src="images/chuyenmuc/cm2.webp" alt="" class="card-main-img">
-                </a>
-                <a href="#" class="card-detail">
-                    <img src="images/chuyenmuc/cm3.webp" alt="" class="card-main-img">
-                </a>
-                <a href="#" class="card-detail">
-                    <img src="images/chuyenmuc/cm4.webp" alt="" class="card-main-img">
-                </a>
-                <a href="#" class="card-detail">
-                    <img src="images/chuyenmuc/cm5.webp" alt="" class="card-main-img">
-                </a>
-                <a href="#" class="card-detail">
-                    <img src="images/chuyenmuc/cm6.webp" alt="" class="card-main-img">
-                </a>
-                <a href="#" class="card-detail">
-                    <img src="images/chuyenmuc/cm7.webp" alt="" class="card-main-img">
->>>>>>> 08ecaec3f9b0d2e9a25ecd5d82e1f6232c23ff90
                 </a>
             </div>
         </div>
@@ -255,13 +233,8 @@
                                     <div class="product-item">
                                         <div class="product-item-card">
                                             <div class="product-item-card-img">
-<<<<<<< HEAD
                                                 <a href="./chi-tiet.php?id=<?php echo $item['id'] ?>">
                                                     <img src="<?php echo($item["img"]) ?>/1.webp" alt="">
-=======
-                                                <a href="#">
-                                                    <img src="<?php echo($item["img"]) ?>" alt="">
->>>>>>> 08ecaec3f9b0d2e9a25ecd5d82e1f6232c23ff90
                                                 </a>
                                             </div>
                                         </div>

@@ -6,6 +6,8 @@
 
     $result = select_one($sql);
     // print_r($result).die("ok");
+    $cm = "SELECT * FROM chuyenmuc WHERE id={$result["cid"]}";
+    $cmo = select_one($cm);
 ?>
 <!DOCTYPE html>
 <html lang="vi">
@@ -45,10 +47,10 @@
                       <a class="header_navbar-link" href="#">KIỂM TRA ĐƠN HÀNG</a>
                     </li>
                     <li class="nav-item header_navbar-item">
-                      <a class="header_navbar-link" href="#">ĐĂNG NHẬP</a>
+                      <a class="header_navbar-link" href="./login.php">ĐĂNG NHẬP</a>
                     </li>
                     <li class="nav-item header_navbar-item">
-                      <a class="header_navbar-link" href="#">ĐĂNG KÝ</a>
+                      <a class="header_navbar-link" href="./register.php">ĐĂNG KÝ</a>
                     </li>
                     <li class="nav-item header_navbar-item dropdown">
                       <a class="header_navbar-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -65,7 +67,7 @@
             </nav>
           <div class="header_search">
               <div class="header_search-logo">
-                  <a href="#"><img class="header_search-logo-img" src="images/logo.png" alt="logo"/></a>
+                  <a href="./index.php"><img class="header_search-logo-img" src="images/logo.png" alt="logo"/></a>
               </div>
               <div class="header_search-action">
                       <input class="search-action_input" placeholder="Tìm kiếm trên lazada" type="text">
@@ -137,8 +139,8 @@
           <ul class="nav-breadcrumb-list">
             <li class="nav-breadcrumb-item">
               <span class="nav-breadcrumb-item-text">
-                <a href="#" class="breadcrumb-edit">
-                  <span>Thiết Bị Điện Tử</span>
+                <a href="./chuyen-muc.php?id=<?php echo $result['id'] ?>" class="breadcrumb-edit">
+                  <span><?php echo $cmo['name'] ?></span>
                   <div class="right-arrow"></div>
                 </a>
               </span>
@@ -146,23 +148,7 @@
             <li class="nav-breadcrumb-item">
               <span class="nav-breadcrumb-item-text">
                 <a href="#" class="breadcrumb-edit">
-                  <span>Thiết Bị Điện Tử</span>
-                  <div class="right-arrow"></div>
-                </a>
-              </span>
-            </li>
-            <li class="nav-breadcrumb-item">
-              <span class="nav-breadcrumb-item-text">
-                <a href="#" class="breadcrumb-edit">
-                  <span>Thiết Bị Điện Tử</span>
-                  <div class="right-arrow"></div>
-                </a>
-              </span>
-            </li>
-            <li class="nav-breadcrumb-item">
-              <span class="nav-breadcrumb-item-text">
-                <a href="#" class="breadcrumb-edit">
-                  <span>Thiết Bị Điện Tử</span>
+                  <span><?php echo $result['cardname'] ?></span>
                   <div class="right-arrow"></div>
                 </a>
               </span>
@@ -278,8 +264,8 @@
                           <div class="product-price-set">
                             <span class="buy-price"><?php echo $result["cardprice"] ?></span>
                             <div class="discount-block">
-                              <span class="price-sale"><?php echo $result["current-price"] ?></span>
-                              <span class="price-discount"><?php echo $result["current-saleoff"] ?></span>
+                              <span class="price-sale"><?php echo $result["currentprice"] ?></span>
+                              <span class="price-discount"><?php echo $result["currentsaleoff"] ?></span>
                             </div>
                           </div>
                         </div>

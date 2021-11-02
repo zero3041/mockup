@@ -1,25 +1,21 @@
 <?php
     include("lib_db.php");
 	$id = isset($_REQUEST["id"]) ? $_REQUEST["id"] : 0;
+    // $p = isset($_REQUEST["p"]) ? $_REQUEST["p"] : 0;
 	if ($id<  1) return ;
+    // if ($p < 1 ) return ;
     $sql = "SELECT * FROM trangchu where id=$id";
     // print_r($sql).exit();
     $result = select_one($sql);
     // print_r($result).die("ok");
-<<<<<<< HEAD
     $cm = "SELECT * FROM chuyenmuc WHERE id={$result["cid"]}";
     $cmo = select_one($cm);
-    // print_r($cm).die("ok");
+    // print_r($cmo).die("");
     $sql = "SELECT * FROM trangchu where cid={$result['cid']}";
     // print_r($sql).exit();
     $list = select_list($sql);
 
 
-=======
-    $sql = "SELECT * FROM trangchu where cid={$result['cid']}";
-    // print_r($sql).exit();
-    $list = select_list($sql);
->>>>>>> 08ecaec3f9b0d2e9a25ecd5d82e1f6232c23ff90
 ?>
 <!DOCTYPE html>
 <html lang="vi">
@@ -59,10 +55,10 @@
                       <a class="header_navbar-link" href="#">KIỂM TRA ĐƠN HÀNG</a>
                     </li>
                     <li class="nav-item header_navbar-item">
-                      <a class="header_navbar-link" href="#">ĐĂNG NHẬP</a>
+                      <a class="header_navbar-link" href="./login.php">ĐĂNG NHẬP</a>
                     </li>
                     <li class="nav-item header_navbar-item">
-                      <a class="header_navbar-link" href="#">ĐĂNG KÝ</a>
+                      <a class="header_navbar-link" href="./register.php">ĐĂNG KÝ</a>
                     </li>
                     <li class="nav-item header_navbar-item dropdown">
                       <a class="header_navbar-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -79,7 +75,7 @@
             </nav>
           <div class="header_search">
               <div class="header_search-logo">
-                  <a href="#"><img class="header_search-logo-img" src="images/logo.png" alt="logo"/></a>
+                  <a href="./index.php"><img class="header_search-logo-img" src="images/logo.png" alt="logo"/></a>
               </div>
               <div class="header_search-action">
                       <input class="search-action_input" placeholder="Tìm kiếm trên lazada" type="text">
@@ -152,31 +148,7 @@
             <li class="nav-breadcrumb-item">
               <span class="nav-breadcrumb-item-text">
                 <a href="#" class="breadcrumb-edit">
-                  <span>Thiết Bị Điện Tử</span>
-                  <div class="right-arrow"></div>
-                </a>
-              </span>
-            </li>
-            <li class="nav-breadcrumb-item">
-              <span class="nav-breadcrumb-item-text">
-                <a href="#" class="breadcrumb-edit">
-                  <span>Thiết Bị Điện Tử</span>
-                  <div class="right-arrow"></div>
-                </a>
-              </span>
-            </li>
-            <li class="nav-breadcrumb-item">
-              <span class="nav-breadcrumb-item-text">
-                <a href="#" class="breadcrumb-edit">
-                  <span>Thiết Bị Điện Tử</span>
-                  <div class="right-arrow"></div>
-                </a>
-              </span>
-            </li>
-            <li class="nav-breadcrumb-item">
-              <span class="nav-breadcrumb-item-text">
-                <a href="#" class="breadcrumb-edit">
-                  <span>Thiết Bị Điện Tử</span>
+                  <span><?php echo $cmo['name'] ?></span>
                   <div class="right-arrow"></div>
                 </a>
               </span>
@@ -218,11 +190,11 @@
                 <div class="content-detail-row">
                     <div class="content-detail-col-first">
                         <div class="content-header">
-                            <h1 class="content-header-title">Cáp & Dock Sạc</h1>
+                            <h1 class="content-header-title"><?php echo $cmo['name'] ?></h1>
                             <div class="content-header-nav">
                                 <div class="content-header-nav-search">
                                     <span>92696 sản phẩm tìm thấy trong </span>
-                                    <span>Cáp & Dock sạc</span>
+                                    <span><?php echo $cmo['name'] ?></span>
                                 </div>
                             </div>
                         </div>
@@ -247,9 +219,9 @@
                                             </div>
                                             <div class="product-item-sale">
                                                 <span class="product-item-sale-del">
-                                                    <span class="product-item-sale-discount"><?php echo $item["current-price"] ?></span>
+                                                    <span class="product-item-sale-discount"><?php echo $item["currentprice"] ?></span>
                                                 </span>
-                                                <span class="product-item-sale-off"><?php echo $item["current-saleoff"] ?></span>
+                                                <span class="product-item-sale-off"><?php echo $item["currentsaleoff"] ?></span>
                                             </div>
                                             
                                         </div>
@@ -265,7 +237,7 @@
                             <div class="content-category-header">
                                 <div class="content-category-header-title">Danh mục liên quan</div>
                                 <div class="content-category-header-link">
-                                    <a href="#">Cáp & Dock Sạc</a>
+                                    <a href="#"><?php echo $cmo['name'] ?></a>
                                 </div>
                             </div>
                             <div class="content-main">

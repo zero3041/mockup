@@ -96,7 +96,7 @@ function exec_update($sql){
 	//$err = $link->error();
 	//kiem tra
 	if ($err){
-		print("Khong thể select duoc,ERROR=[" . $err . "]" );
+		print("Không thể select được,ERROR=[" . $err . "]" );
 		print(  "COUNT=[0]" );
 		return -1;
 	}
@@ -106,7 +106,7 @@ function exec_update($sql){
 	return 1;
 }
 function sql_str($val){
-	if($val === 0)  return '0' ;
+	if($val ===  0)  return '0' ;
 	if($val === null) {
 		return 'NULL';
 	}

@@ -41,10 +41,10 @@
                       <a class="header_navbar-link" href="#">KIỂM TRA ĐƠN HÀNG</a>
                     </li>
                     <li class="nav-item header_navbar-item">
-                      <a class="header_navbar-link" href="#">ĐĂNG NHẬP</a>
+                      <a class="header_navbar-link" href="./login.php">ĐĂNG NHẬP</a>
                     </li>
                     <li class="nav-item header_navbar-item">
-                      <a class="header_navbar-link" href="#">ĐĂNG KÝ</a>
+                      <a class="header_navbar-link" href="./register.php">ĐĂNG KÝ</a>
                     </li>
                     <li class="nav-item header_navbar-item dropdown">
                       <a class="header_navbar-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -61,7 +61,7 @@
             </nav>
           <div class="header_search">
               <div class="header_search-logo">
-                  <a href="#"><img class="header_search-logo-img" src="images/logo.png" alt="logo"/></a>
+                  <a href="./index.php"><img class="header_search-logo-img" src="images/logo.png" alt="logo"/></a>
               </div>
               <div class="header_search-action">
                       <input class="search-action_input" placeholder="Tìm kiếm trên lazada" type="text">

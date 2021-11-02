@@ -18,7 +18,7 @@
     // print_r($items).exit();
 ?>
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="vi" >
 <head>
     <meta charset="UTF-8">
     <title>Bài tập Lớn</title>
@@ -63,12 +63,12 @@
                               </a>
                             </li>
                             <li class="header_navbar-item nav-item">
-                              <a href="#" class="header_navbar-link">
+                              <a href="./login.php" class="header_navbar-link">
                                 ĐĂNG NHẬP
                               </a>
                             </li>
                             <li class="header_navbar-item nav-item">
-                              <a href="#" class="header_navbar-link">
+                              <a href="./register.php" class="header_navbar-link">
                                 ĐĂNG KÝ
                               </a>
                             </li>
@@ -86,7 +86,7 @@
              <div class="header-body ">
               <div class="header_search">
                    <div class="header_search-logo">
-                       <a href="#"><img class="header_search-logo-img" src="images/logo.png" alt="logo"/></a>
+                       <a href="./index.php"><img class="header_search-logo-img" src="images/logo.png" alt="logo"/></a>
                      </div>
                    <div class="header_search-action">
                        <input class="search-action_input" placeholder="Tìm kiếm trên Lazada" type="text"/>
@@ -256,20 +256,14 @@
                         <?php foreach($resultOther as $item) {?>
                           <div class="col-lg-2 col-md-4 col-sm-6">
                           <div href="#" class="deal-content_card col">
-<<<<<<< HEAD
                             <a href="./chi-tiet.php?id=<?php echo($item["id"]) ?>"><img class="imgdeal" src="<?php echo $item["img"] ?>/1.webp" alt=""></a>
                             <div class="card-name">
                               <a href="./chi-tiet.php?id=<?php echo($item["id"]) ?>" class="card-text" ><?php echo $item["cardname"] ?></a>
-=======
-                            <a href="./chuyen-muc.php?id=<?php echo($item["id"]) ?>"><img class="imgdeal" src="<?php echo $item["img"] ?>" alt=""></a>
-                            <div class="card-name">
-                              <a href="./chuyen-muc.php?id=<?php echo($item["id"]) ?>" class="card-text" ><?php echo $item["cardname"] ?></a>
->>>>>>> 08ecaec3f9b0d2e9a25ecd5d82e1f6232c23ff90
                             </div>
                             <div class="card-price"><?php echo $item["cardprice"] ?></div>
                             <div class="card-price-current">
-                              <span class="current-price"><?php echo $item["current-price"] ?></span>
-                              <span class="current-safeoff"><?php echo $item["current-saleoff"] ?></span>
+                              <span class="current-price"><?php echo $item["currentprice"] ?></span>
+                              <span class="current-safeoff"><?php echo $item["currentsaleoff"] ?></span>
                             </div>
                           </div>
                         </div>
@@ -567,11 +561,7 @@
                         <div class="categories-detail-item">
                           <a href="./chuyen-muc.php?id=<?php echo $items['id'] ?>" class="categories-detail-item-content">
                             <div class="categories-detail-item-img">
-<<<<<<< HEAD
                               <img src="<?php echo $items["img"] ?>/1.webp" alt="">
-=======
-                              <img src="<?php echo $items["img"] ?>" alt="">
->>>>>>> 08ecaec3f9b0d2e9a25ecd5d82e1f6232c23ff90
                             </div>
                             <div class="categories-detail-item-name">
                               <span class="item-name-text"><?php echo $mid["name"] ?></span>

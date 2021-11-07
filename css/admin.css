@@ -106,7 +106,7 @@ html,body {
 }
 
 .navbar-toggler-icon{
-    background-image: url(https://banner2.cleanpng.com/20190826/keu/transparent-interface-and-web-icon-menu-button-of-three-horizo-5d63c2541bed33.4910190815668189001144.jpg);
+    background-image: url(../images/nut.jpg);
 }
   
 .header_search-logo-img {
@@ -421,6 +421,17 @@ html,body {
 /* Phan login  */
 /* --------------------------------- */
 
+.page-edit{
+
+}
+
+.phantrang{
+    text-align: center;
+    font-size: 14px;
+    color: blue;
+    margin-left: 5px;
+    display: inline-block
+}
 
 
 

@@ -11,6 +11,12 @@
     // print_r($last).die('ok');
     $dem = $last['id'] + 1;
     // print_r($dem).die('ok');
+    if(isset($_COOKIE['username'])){
+      if($_COOKIE['level']!=md5(1)){
+          return header("location:index.php");
+      }
+      
+  }else header("location:login.php");
 ?>
 <!DOCTYPE html>
 <html lang="vi">
@@ -49,12 +55,32 @@
                     <li class="nav-item header_navbar-item">
                       <a class="header_navbar-link" href="#">KIỂM TRA ĐƠN HÀNG</a>
                     </li>
-                    <li class="nav-item header_navbar-item">
-                      <a class="header_navbar-link" href="./login.php">ĐĂNG NHẬP</a>
-                    </li>
-                    <li class="nav-item header_navbar-item">
-                      <a class="header_navbar-link" href="./register.php">ĐĂNG KÝ</a>
-                    </li>
+                    <?php
+                            if(!isset($_COOKIE['username'])){
+                            echo '<li class="header_navbar-item nav-item">
+                              <a href="./login.php" class="header_navbar-link">
+                                ĐĂNG NHẬP
+                              </a>
+                            </li>
+                            <li class="header_navbar-item nav-item">
+                              <a href="./register.php" class="header_navbar-link">
+                                ĐĂNG KÝ
+                              </a>';
+                            }else
+                            {
+                            echo '<li class="header_navbar-item nav-item">
+                              <a href="./admin.php" class="header_navbar-link">
+                                ADMIN
+                              </a>
+                            </li>
+                            <li class="header_navbar-item nav-item">
+                              <a href="./logout.php" class="header_navbar-link">
+                                ĐĂNG XUẤT
+                              </a>
+                              </li>';
+                            }
+
+                              ?>
                     <li class="nav-item header_navbar-item dropdown">
                       <a class="header_navbar-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         CHANGE LANGUAGE

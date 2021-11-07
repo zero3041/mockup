@@ -27,4 +27,5 @@
     $sql = data_to_sql_update($tbl,$data,$cond);
     // print_r($sql);exit();
     $ret = exec_update($sql);
+    header("location:admin.php");
 ?>

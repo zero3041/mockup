@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include("lib_db.php");
     $sql = "select * from trangchu limit 6";
     $resultOther = select_list($sql);
@@ -62,7 +63,9 @@
                                 KIỂM TRA ĐƠN HÀNG
                               </a>
                             </li>
-                            <li class="header_navbar-item nav-item">
+                            <?php
+                            if(!isset($_COOKIE['username'])){
+                            echo '<li class="header_navbar-item nav-item">
                               <a href="./login.php" class="header_navbar-link">
                                 ĐĂNG NHẬP
                               </a>
@@ -70,8 +73,35 @@
                             <li class="header_navbar-item nav-item">
                               <a href="./register.php" class="header_navbar-link">
                                 ĐĂNG KÝ
-                              </a>
-                            </li>
+                              </a>';
+                            }else
+                            {
+                              if($_COOKIE['level']==md5(1)){
+                                echo '<li class="header_navbar-item nav-item">
+                                  <a href="./admin.php" class="header_navbar-link">
+                                    ADMIN
+                                  </a>
+                                </li>
+                                <li class="header_navbar-item nav-item">
+                                  <a href="./logout.php" class="header_navbar-link">
+                                    ĐĂNG XUẤT
+                                  </a></li>';
+                              }
+                              if($_COOKIE['level']!=md5(1)){
+                                echo '<li class="header_navbar-item nav-item">
+                                  <a href="#" class="header_navbar-link">';
+                                   echo $_COOKIE['username'];
+                                 echo '</a>
+                                </li>
+                                <li class="header_navbar-item nav-item">
+                                  <a href="./logout.php" class="header_navbar-link">
+                                    ĐĂNG XUẤT
+                                  </a></li>';
+                              }
+                            }
+
+                              ?>
+                            
                             <li class="header_navbar-item nav-item">
                               <a href="#" class="header_navbar-link">
                                 CHANGE LANGUAGE

@@ -1,6 +1,9 @@
 <?php
     include('lib_db.php');
+    // include('check_login.php');
     session_start();
+    if(isset($_COOKIE['username']))
+        header("location:index.php")
 ?>
 <!DOCTYPE html>
 <html lang="vi">
@@ -13,7 +16,33 @@
         <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/bootstrap/js/bootstrap.js"></script>
-        
+        <script>
+            $(document).ready(function(){
+                $('.button-dangnhap').click(function(e){
+                    e.preventDefault();
+                    $.ajax({
+                        url: "http://localhost:8000/mockup/login_submit.php",
+                        method: 'post',
+                        dataType: 'json',
+                        data: {
+                            username: $('[name="username"]').val(),
+                            password: $('[name="password"]').val(),
+                            submit_dangnhap: 1,
+                            ajax: 1
+                        }
+                        }).done(function(res) {
+                            
+                            if(res.success){
+                                window.location= "http://localhost:8000/mockup/index.php";
+                            }else{
+                                alert(res.mes);
+                                return;
+                            }
+                            
+                        });
+                })
+                })
+        </script>
     </head>
 
 <body>
@@ -39,12 +68,32 @@
                     <li class="nav-item header_navbar-item">
                       <a class="header_navbar-link" href="#">KIỂM TRA ĐƠN HÀNG</a>
                     </li>
-                    <li class="nav-item header_navbar-item">
-                      <a class="header_navbar-link" href="./login.php">ĐĂNG NHẬP</a>
-                    </li>
-                    <li class="nav-item header_navbar-item">
-                      <a class="header_navbar-link" href="./register.php">ĐĂNG KÝ</a>
-                    </li>
+                    <?php
+                            if(!isset($_COOKIE['username'])){
+                            echo '<li class="header_navbar-item nav-item">
+                              <a href="./login.php" class="header_navbar-link">
+                                ĐĂNG NHẬP
+                              </a>
+                            </li>
+                            <li class="header_navbar-item nav-item">
+                              <a href="./register.php" class="header_navbar-link">
+                                ĐĂNG KÝ
+                              </a>';
+                            }else
+                            {
+                            echo '<li class="header_navbar-item nav-item">
+                              <a href="./admin.php" class="header_navbar-link">
+                                ADMIN
+                              </a>
+                            </li>
+                            <li class="header_navbar-item nav-item">
+                              <a href="./logout.php" class="header_navbar-link">
+                                ĐĂNG XUẤT
+                              </a>
+                              </li>';
+                            }
+
+                              ?>
                     <li class="nav-item header_navbar-item dropdown">
                       <a class="header_navbar-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         CHANGE LANGUAGE
@@ -156,7 +205,7 @@
                           </div>
                           <div class="login-main-right">
                             <div class="login-button button-login">
-                                <button type="submit" name="submit-dangnhap" class="button-dangnhap">ĐĂNG NHẬP</button>
+                                <button type="submit" name="submit_dangnhap" class="button-dangnhap">ĐĂNG NHẬP</button>
                             </div>
                             <div class="login-button button-login">
                                 <button type="submit" name="submit-dangky" class="button-dangky">ĐĂNG KÝ</button>
